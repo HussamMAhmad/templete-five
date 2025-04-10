@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+</head>
+
+<body>
+    <!-- start setting box -->
+    <div class="setting-box">
+        <div class="icon">
+            <i class='bx bxs-cog'></i>
+        </div>
+        <div class="content">
+            <div class="options">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#FF5722"></li>
+                    <li data-color="#e91e63"></li>
+                    <li data-color="#4CAF50"></li>
+                    <li data-color="#03A9F4"></li>
+                    <li data-color="#FFEB3B"></li>
+                </ul>
+            </div>
+            <div class="options">
+                <h4 class="random">Random Backgrounds</h4>
+                <div class="random-backgrounds">
+                    <span class="yes active" data-random="yes">Yes</span>
+                    <span class="no" data-random="no">No</span>
+                </div>
+            </div>
+            <div class="options">
+                <h4 class="random">Show Bullets</h4>
+                <div class="bullets">
+                    <span class="yes active" data-show="show">Yes</span>
+                    <span class="no" data-show="hide">No</span>
+                </div>
+            </div>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <!-- End setting box -->
+    <!-- start bullets -->
+    <div class="nav-bullets">
+        <div class="bullet" data-section=".about-us">
+            <div class="tooltip">About</div>
+        </div>
+        <div class="bullet" data-section=".skills">
+            <div class="tooltip">our skills</div>
+        </div>
+        <div class="bullet" data-section=".gallery">
+            <div class="tooltip">out gallery</div>
+        </div>
+        <div class="bullet" data-section=".timeline">
+            <div class="tooltip">Timeline</div>
+        </div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip">Features</div>
+        </div>
+        <div class="bullet" data-section=".testmonials">
+            <div class="tooltip">Testmonials</div>
+        </div>
+    </div>
+    <!-- end bullets -->
+    <!-- start landing page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-area">
+                <div class="logo">Special Design</div>
+                <div class="links-container">
+                    <ul class="links">
+                        <li><a href="#" class="active" data-section=".about-us">About</a></li>
+                        <li><a href="#" data-section=".skills">Skills</a></li>
+                        <li><a href="#" data-section=".gallery">Gallery</a></li>
+                        <li><a href="#" data-section=".timeline">Timeline</a></li>
+                        <li><a href="#" data-section=".features">Features</a></li>
+                        <li><a href="#" data-section=".testmonials">Testmonials</a></li>
+                    </ul>
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+        </div>
+        <div class="introduction-text">
+            <h1>We are <span>creative</span> agency</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Iusto, voluptatum expedita veniam doloribus</p>
+        </div>
+    </div>
+    <!-- end landing page -->
+    <!-- start About us -->
+    <div class="container">
+        <div class="about-us">
+            <div class="info-box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque enim nisi sed earum porro,
+                    voluptates totam assumenda incidunt iste?
+                    Laborum placeat veritatis quidem maiores deleniti
+                    similique magnam beatae eveniet ducimus.
+                </p>
+                <span>Learn More</span>
+            </div>
+            <div class="image-box">
+                <img src="imgs/concept-of-data-analysis-and-maintenance.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end About us -->
+    <!-- start skills -->
+    <div class="skills">
+        <div class="container">
+            <h2>Our Skills</h2>
+            <div class="skill-box">
+                <div class="skill-name">HTML</div>
+                <div class="progress-box">
+                    <span data-width="80%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="progress-box">
+                    <span data-width="70%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-box">
+                    <span data-width="95%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Github</div>
+                <div class="progress-box">
+                    <span data-width="65%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Python</div>
+                <div class="progress-box">
+                    <span data-width="40%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">C++</div>
+                <div class="progress-box">
+                    <span data-width="35%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end skills -->
+    <!-- start gallery -->
+    <div class="gallery">
+        <div class="container">
+            <h2 class="name">Our Gallery</h2>
+            <div class="box">
+                <img src="./imgs/bitcoin_cryptocurrency_physical_coin-wallpaper-1920x1080.jpg" alt="image-1">
+                <img src="./imgs/desk-wallpaper-1920x1080.jpg" alt="image-2">
+                <img src="./imgs/cpu_wireframe-wallpaper-1920x1080.jpg" alt="image-3">
+                <img src="./imgs/dreams_dont_work_unless_you_do_2-wallpaper-1920x1080.jpg" alt="image-4">
+                <img src="./imgs/wallpaperflare.com_wallpaper (1).jpg" alt="image-5">
+                <img src="./imgs/wallpaperflare.com_wallpaper (2).jpg" alt="">
+                <img src="./imgs/wallpaperflare.com_wallpaper (3).jpg" alt="">
+                <img src="./imgs/wallpaperflare.com_wallpaper.jpg" alt="">
+                <img src="./imgs/digital_data-wallpaper-1920x1080.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- End gallery -->
+    <!-- start timeline -->
+    <div class="timeline">
+        <div class="container">
+            <div class="timeline-content">
+                <div class="year">2025</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Texting heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Optio atque doloribus possimus vero nesciunt ipsam nihil
+                            animi excepturi illum at blanditiis sunt, tenetur magnam,
+                            ex fugiat,rem expedita accusantium eum.
+                        </p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="right">
+                    <div class="content">
+                        <h3>Texting heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Optio atque doloribus possimus vero nesciunt ipsam nihil
+                            animi excepturi illum at blanditiis sunt, tenetur magnam,
+                            ex fugiat,rem expedita accusantium eum.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="year">2024</div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Texting heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Optio atque doloribus possimus vero nesciunt ipsam nihil
+                            animi excepturi illum at blanditiis sunt, tenetur magnam,
+                            ex fugiat,rem expedita accusantium eum.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="left">
+                    <div class="content">
+                        <h3>Texting heading</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Optio atque doloribus possimus vero nesciunt ipsam nihil
+                            animi excepturi illum at blanditiis sunt, tenetur magnam,
+                            ex fugiat,rem expedita accusantium eum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End timeline -->
+    <!-- start ourFeatures -->
+    <div class="features">
+        <h2>Our Features</h2>
+        <div class="container">
+            <div class="feat-box">
+                <div class="image">
+                    <i class='bx bx-signal-5'></i>
+                </div>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quam, impedit non ab,
+                    quasi velit,sed expedita doloribus
+                </p>
+            </div>
+            <div class="feat-box">
+                <div class="image">
+                    <i class='bx bx-code-block'></i>
+                </div>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quam, impedit non ab,
+                    quasi velit,sed expedita doloribus
+                </p>
+            </div>
+            <div class="feat-box">
+                <div class="image">
+                    <i class='bx bx-edit'></i>
+                </div>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quam, impedit non ab,
+                    quasi velit,sed expedita doloribus
+                </p>
+            </div>
+            <div class="feat-box">
+                <div class="image">
+                    <i class='bx bxs-color'></i>
+                </div>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quam, impedit non ab,
+                    quasi velit,sed expedita doloribus
+                </p>
+            </div>
+            <div class="feat-box">
+                <div class="image">
+                    <i class='bx bxs-camera-plus'></i>
+                </div>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quam, impedit non ab,
+                    quasi velit,sed expedita doloribus
+                </p>
+            </div>
+            <div class="feat-box">
+                <div class="image">
+                    <i class='bx bx-gift'></i>
+                </div>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quam, impedit non ab,
+                    quasi velit,sed expedita doloribus
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End ourFeatures -->
+    <!-- start testmonials -->
+    <div class="testmonials">
+        <div class="container">
+            <h2>Testmonials</h2>
+            <div class="ts-content">
+                <div class="ts-box">
+                    <img src="imgs/wallpaperflare.com_wallpaper.jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.Fugiat beatae deserunt soluta natus,
+                        quod tenetur? Assumenda tempore itaque
+                        aspernatur nostrum rem nam iure,voluptatibus
+                    </p>
+                    <h4>Mohamed Ibrahim<span>CHO At company</span></h4>
+                </div>
+                <div class="ts-box">
+                    <img src="imgs/wallpaperflare.com_wallpaper (2).jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.Fugiat beatae deserunt soluta natus,
+                        quod tenetur? Assumenda tempore itaque
+                        aspernatur nostrum rem nam iure,voluptatibus
+                    </p>
+                    <h4>Mohamed Ibrahim<span>CHO At company</span></h4>
+                </div>
+                <div class="ts-box">
+                    <img src="imgs/wallpaperflare.com_wallpaper (1).jpg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit.Fugiat beatae deserunt soluta natus,
+                        quod tenetur? Assumenda tempore itaque
+                        aspernatur nostrum rem nam iure,voluptatibus
+                    </p>
+                    <h4>Mohamed Ibrahim<span>CHO At company</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End testmonials -->
+    <!-- start contact us -->
+    <div class="contact-us">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="left">
+                <div class="info">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit.
+                        Enim quos velit corporis
+                        nam quo modi neque sint quis?
+                    </p>
+                </div>
+                <div class="contact">
+                    <div class="in">
+                        <i class='bx bxs-envelope'></i>
+                        <span>hussam@gmail.com</span>
+                    </div>
+                    <div class="in">
+                        <i class='bx bxs-phone'></i>
+                        <span>Support +963 934 100 100</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h2>We'd love to hear from you!</h2>
+                <h2>Let's get in touch</h2>
+                <form action="" class="form">
+                    <div class="one">
+                        <div class="input-one">
+                            <span>Full Name</span>
+                            <input type="text" class="name">
+                        </div>
+                        <div class="input-two">
+                            <span>company</span>
+                            <input type="text" class="company">
+                        </div>
+                    </div>
+                    <div class="one">
+                        <div class="input-one">
+                            <span>Email</span>
+                            <input type="text" class="email" placeholder="olivia@gmail.com">
+                        </div>
+                        <div class="input-two">
+                            <span>phone number</span>
+                            <input type="text" class="number">
+                        </div>
+                    </div>
+                    <div class="two">
+                        <span>Adress</span>
+                        <input type="text" class="address">
+                    </div>
+                    <div class="three">
+                        <span>Your Message</span>
+                        <textarea name="" id="" placeholder="Type your message here"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message" class="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End contact us -->
+    <!-- start footer -->
+     <div class="footer">Created by Hussam</div>
+    <!-- End footer -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
